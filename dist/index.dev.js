@@ -51,7 +51,7 @@ server.get("/users", function (req, res) {
   // route handler code here
   var users = db.find(); //res.send(users);
 
-  res.status(200).json(users);
+  res.json(users); // res.status(200).json(users);
 }); // once the server is fully configured we can have it "listen" for connections on a particular "port"
 // the callback function passed as the second argument will run once when the server starts
 

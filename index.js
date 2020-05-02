@@ -56,10 +56,13 @@ server.get("/users", (req, res) => {
   const users = db.find()
    
   //res.send(users);
-   
-
-  res.status(200).json(users);
+  res.json(users);
+  // res.status(200).json(users);
 });
+
+
+
+
 
 
 // once the server is fully configured we can have it "listen" for connections on a particular "port"
